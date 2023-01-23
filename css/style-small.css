@@ -1,0 +1,37 @@
+body {
+    background-color: aqua;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+
+}
+
+.h1 {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0px;
+}
+
+.logo {
+    margin: 0px;
+}
+
+.h2 {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.elements-header-left {
+    display: none;
+}
+
+.elements-header-right {
+    display: none;
+}
