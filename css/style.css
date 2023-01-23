@@ -18,7 +18,7 @@ a:hover {
     height: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 4fr;
+    grid-template-rows: 12fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .box {
@@ -33,11 +33,21 @@ a:hover {
 /* /// CABECERA /// */
 
 .header {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.797);
     display: flex;
     position: fixed;
     width: 100vw;
 
+}
+
+.header-video {
+    grid-column: 1 / 6;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vh;
 }
 
 .h1 {
@@ -115,6 +125,10 @@ a:hover {
 
 @media (min-width: 361px){
     .element-h-left-dsk{
+        display: none;
+    }
+
+    .image-mobile {
         display: none;
     }
 }
