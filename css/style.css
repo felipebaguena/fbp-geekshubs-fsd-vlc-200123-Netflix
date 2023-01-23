@@ -33,10 +33,11 @@ a:hover {
 /* /// CABECERA /// */
 
 .header {
-    background-color: rgba(0, 0, 0, 0.797);
+    background-color: rgba(0, 0, 0, 0.841);
     display: flex;
     position: fixed;
     width: 100vw;
+    z-index: 20;
 
 }
 
@@ -69,26 +70,9 @@ a:hover {
     gap: 10px
 }
 
-.box1 {
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 20px;
-    gap: 20px;
-}
-
 .logo {
     width: 100px;
     margin-right: 20px;
-}
-
-.box2 {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
-    gap: 10px;
 }
 
 .finder {
@@ -114,10 +98,6 @@ a:hover {
     font-size: large;
 }
 
-.box9 {
-    grid-column: 1 / 6;
-}
-
 .content {
     width: 100%
 }
@@ -131,4 +111,84 @@ a:hover {
     .image-mobile {
         display: none;
     }
+}
+
+.container-logo-video-big{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    z-index: 10;
+    margin-left: 100px;
+}
+
+.container-logo-video {
+    width: 400px;
+}
+
+#logo-arcane {
+
+    width: 100%;
+}
+
+#texto-video {
+    color: rgb(214, 217, 219);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-shadow: 3px 3px 5px black;
+}
+
+#reproducir {
+    background-color: azure;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#reproducir:hover {
+    background-color: rgba(240, 255, 255, 0.438);
+    cursor: pointer;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 16px solid black;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+
+.botones-centro {
+    display: flex;
+}
+
+#mas-informacion {
+    background-color: rgba(124, 124, 124, 0.552);
+    width: 170px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+    color: azure;
+}
+
+#info-logo {
+    width: 22px;
+}
+
+#mas-informacion:hover {
+    background-color:rgba(154, 154, 154, 0.289);
+    cursor: pointer;
 }
